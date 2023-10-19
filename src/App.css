@@ -28,6 +28,21 @@
   color: #61dafb;
 }
 
+/* For tablets */
+@media (max-width: 768px) {
+  .form-container {
+      padding: 15px;
+  }
+}
+
+/* For mobile phones */
+@media (max-width: 480px) {
+  .form-container {
+      width: 90%;
+  }
+}
+
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -35,4 +50,100 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.input-field {
+  margin-bottom: 15px;
+}
+
+.button {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  min-height: 100vh;
+}
+@keyframes GradientAnimation {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+}
+
+.form-container {
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  background-image: url('https://images.unsplash.com/photo-1574617425757-4b756d0674b7?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; 
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; 
+}
+
+.switch-form-text {
+  margin-top: 1rem;
+  font-size: 0.9rem;
 }
